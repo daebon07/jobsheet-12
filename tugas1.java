@@ -1,15 +1,13 @@
 public class tugas1 {
-    static void deretDescendingRekursif(int n) {
-        if (n < 0) {
-            return;  
+    static void deretDescendingIteratif(int n) {
+        for (int i = n; i >= 0; i--) {
+            System.out.print(i + " "); 
         }
-        System.out.print(n + " ");  
-        deretDescendingRekursif(n - 1);  
     }
 
     public static void main(String[] args) {
         int n = 5;  
-        System.out.println("Deret Descending Rekursif:");
-        deretDescendingRekursif(n);  
+        System.out.println("Deret Descending Iteratif:");
+        deretDescendingIteratif(n);  
     }
 }
